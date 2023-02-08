@@ -216,8 +216,10 @@ body {
 .hero-text {
   display: flex;
   justify-content: center;
-  padding-bottom: 48px;
-  margin: 0px auto;
+  margin-bottom: 48px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--primary-header);
   font-size: 56px;
   line-height: 1.33;
@@ -229,7 +231,6 @@ body {
 .page-doing {
   display: flex;
   justify-content: center;
-  padding-bottom: 120px;
 }
 .we-are:not(:last-child) {
   margin-right: 24px;
@@ -240,6 +241,9 @@ body {
 }
 
 /*title index.html*/
+.team {
+  padding-bottom: 120px;
+}
 .main-page {
   display: flex;
   justify-content: center;
@@ -247,6 +251,7 @@ body {
 }
 
 .main-page {
+  margin-top: 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -342,6 +347,7 @@ body {
 .main-team {
   display: flex;
   justify-content: center;
+  margin-top: 0px;
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.33;
