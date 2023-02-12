@@ -29,6 +29,12 @@ img {
   display: block;
 }
 
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -232,9 +238,14 @@ body {
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../images/people-office.jpg");
   background-position: center;
   background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
 }
 
 /*-----------------------we-are-------------------*/
@@ -454,18 +465,32 @@ body {
   width: 16px;
   height: 16px;
 }
+/*customers--------------------------*/
+.customers {
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
 .block-icon {
   display: flex;
 }
-.customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
+
+.logo-icon {
+  display: block;
+  width: 104px;
+  height: 56px;
+  fill: var(--subtle-text);
 }
-.icon-customers:not(:last-child) {
+
+.icons:not(:last-child) {
   margin-right: 24px;
 }
 
+.logo-icon:hover,
+.logo-icon:focus {
+  fill: var(--pressed-state);
+}
 .icon-customers {
+  display: block;
   height: 88px;
   width: 168px;
   border: 1px solid #8e8f99;
@@ -474,14 +499,8 @@ body {
 
 .icon-customers:hover,
 .icon-customers:focus {
-  border: 1px solid var(--pressed-state);
+  border: 1px solid #404bbf;
   border-radius: 4px;
-}
-
-.logo-icon {
-  fill: var(--subtle-text);
-  width: 104px;
-  height: 56px;
 }
 
 /*menu portfolio----------------*/
@@ -612,6 +631,7 @@ body {
 }
 /*-----------------------------footer--------------------------*/
 .footer {
+  width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 100px;
@@ -620,6 +640,14 @@ body {
 
 .footer {
   background-color: var(--primary-footer);
+}
+
+.block-footer {
+  display: flex;
+}
+
+.block-logo {
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -649,18 +677,20 @@ body {
 }
 /*------------------------icons footer---------------*/
 .social-link {
+  margin-top: 16px;
   display: flex;
   width: 208px;
   height: 80px;
 }
-
 .card-media {
-  display: flex;
-  justify-content: center;
   padding: 0;
   margin: 0;
   height: 24px;
   color: var(--primary-header);
+}
+
+.distance-footer:not(:last-child) {
+  margin-right: 24px;
 }
 
 .icon-footer {
@@ -673,6 +703,10 @@ body {
   padding: 0px;
   width: 40px;
   height: 40px;
+}
+
+.icon-footer:hover {
+  background-color: var(--success);
 }
 
 .media-footer {
