@@ -446,25 +446,11 @@ body {
   background-color: var(--pressed-state);
 }
 
-.instagram {
+.media {
   width: 16px;
   height: 16px;
 }
 
-.twitter {
-  width: 16px;
-  height: 16px;
-}
-
-.facebook {
-  width: 16px;
-  height: 16px;
-}
-
-.linkedin {
-  width: 16px;
-  height: 16px;
-}
 /*customers--------------------------*/
 .customers {
   padding-top: 120px;
