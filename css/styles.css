@@ -366,7 +366,6 @@ body {
 
 .card-block {
   padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .team-name {
@@ -420,10 +419,17 @@ body {
 
 .icon-team {
   display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
 }
 
-.icon-distance:nth-of-type(1) {
-  margin-left: 16px;
+.icon-list {
+  display: flex;
+}
+
+.icon-distance {
+  width: 40px;
+  height: 40px;
 }
 
 .icon-distance:not(:last-child) {
@@ -431,14 +437,17 @@ body {
 }
 
 .btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   margin-top: 8px;
   cursor: pointer;
   border-radius: 50%;
   margin: 0;
   border: none;
   padding: 0px;
-  width: 40px;
-  height: 40px;
   background-color: var(--btn);
 }
 
@@ -446,7 +455,12 @@ body {
   background-color: var(--pressed-state);
 }
 
+.btn-icon:focus {
+  background-color: var(--pressed-state);
+}
+
 .media {
+  display: block;
   width: 16px;
   height: 16px;
 }
@@ -461,31 +475,33 @@ body {
 }
 
 .logo-icon {
-  display: block;
   width: 104px;
   height: 56px;
   fill: var(--subtle-text);
+}
+
+.icons {
+  height: 88px;
+  width: 168px;
 }
 
 .icons:not(:last-child) {
   margin-right: 24px;
 }
 
-.logo-icon:hover,
-.logo-icon:focus {
-  fill: var(--pressed-state);
-}
 .icon-customers {
-  display: block;
-  height: 88px;
-  width: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
 .icon-customers:hover,
 .icon-customers:focus {
-  border: 1px solid #404bbf;
+  border: 1px solid var(--pressed-state);
   border-radius: 4px;
 }
 
@@ -574,8 +590,21 @@ body {
   margin-right: 0;
 }
 .project-card {
+  display: block;
   width: 360px;
   margin-right: 24px;
+}
+
+.project-card:hover {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.project-card:focus {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card {
@@ -591,13 +620,6 @@ body {
 
 .card {
   border-right: 1px solid var(--accent);
-}
-
-.card:hover,
-.card:focus {
-  border: 1px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .title-project {
@@ -665,37 +687,39 @@ body {
 .social-link {
   margin-top: 16px;
   display: flex;
-  width: 208px;
-  height: 80px;
 }
+
 .card-media {
   padding: 0;
   margin: 0;
-  height: 24px;
   color: var(--primary-header);
 }
-
+.distance-footer {
+  width: 40px;
+  height: 40px;
+}
 .distance-footer:not(:last-child) {
   margin-right: 24px;
 }
 
 .icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-top: 16px;
   cursor: pointer;
   border-radius: 50%;
   margin: 0;
   border: none;
   padding: 0px;
-  width: 40px;
-  height: 40px;
 }
 
 .icon-footer:hover {
   background-color: var(--success);
 }
 
-.media-footer {
-  width: 16px;
-  height: 16px;
+.icon-footer:focus {
+  background-color: var(--success);
 }
