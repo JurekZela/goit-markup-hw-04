@@ -366,6 +366,7 @@ body {
 
 .card-block {
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-name {
@@ -416,15 +417,9 @@ body {
 .main-team {
   color: var(--dark);
 }
-
-.icon-team {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 32px;
-}
-
 .icon-list {
   display: flex;
+  justify-content: center;
 }
 
 .icon-distance {
@@ -577,12 +572,12 @@ body {
   min-height: 48px;
 }
 
+/*main portfolio--------------------*/
+
 .work-results {
   display: flex;
   flex-wrap: wrap;
 }
-
-/*main portfolio--------------------*/
 
 .project-card:nth-child(-n + 6) {
   margin-bottom: 48px;
@@ -596,8 +591,9 @@ body {
   margin-right: 24px;
 }
 
-.project-card:hover,
-.project-card:focus {
+.message:hover,
+.message:focus {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
